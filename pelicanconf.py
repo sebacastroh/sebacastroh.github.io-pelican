@@ -14,6 +14,11 @@ DEFAULT_LANG = u'Spanish'
 
 THEME = u'C:\\Users\\sebacastroh\\Anaconda2\\Lib\\site-packages\\pelican\\themes\\blueidea'
 
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['render_math']
+
+#MATH_JAX = {'tex_extensions': ['color.js','mhchem.js']}
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None

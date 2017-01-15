@@ -22,3 +22,9 @@ def sumcuad(double[::1] x):
         s += x[i]**2
     return s
 ```
+
+Una integral
+
+$$
+\int_0^\infty e^{-x^2} dx
+$$
