@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Sebastian Castro'
 SITENAME = u'sebacastroh'
-SITEURL = 'http://sebacastroh.github.io'
+SITEURL = u'http://sebacastroh.github.io'
 
 PATH = 'content'
 
@@ -12,7 +12,7 @@ TIMEZONE = 'America/Santiago'
 
 DEFAULT_LANG = u'Spanish'
 
-THEME = u'D:\Dropbox\Github\pelican-themes\\blueidea'
+THEME = u'C:\\Users\\sebacastroh\\Anaconda2\\Lib\\site-packages\\pelican\\themes\\blueidea'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
