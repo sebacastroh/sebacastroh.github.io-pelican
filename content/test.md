@@ -2,7 +2,7 @@ Title: Cython
 Date: 2017-01-14 11:37
 Category: Review
 
-Una de las ventajas de Python es su sencillez al momento de escribir un c\'odigo. Sin mebargo, no todo es tan maravilloso, hay un costo que pagar. Tal vez no nos damos cuenta porque la mayor\'ia de las veces no requerimos hacer c\'alculos muy pesados, pero las veces que los hacemos, no nos parece que la operaci\'on es demasiado lenta? Esto se debe a que, b\'asicamente, Python es un lenguaje interpretado.
+Una de las ventajas de Python es su sencillez al momento de escribir un código. Sin embargo, no todo es tan maravilloso, hay un costo que pagar. Tal vez no nos damos cuenta porque la mayor\'ia de las veces no requerimos hacer c\'alculos muy pesados, pero las veces que los hacemos, no nos parece que la operaci\'on es demasiado lenta? Esto se debe a que, b\'asicamente, Python es un lenguaje interpretado.
 
 ```python
 def sumcuad(x):
@@ -23,8 +23,6 @@ def sumcuad(double[::1] x):
     return s
 ```
 
-Una integral
+Una integral $$\int_0^\infty e^{-x^2} dx$$
 
-$$
-\int_0^\infty e^{-x^2} dx
-$$
+Otra prueba $\rm Hola$
