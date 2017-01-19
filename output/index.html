@@ -14,6 +14,7 @@
         <header id="banner" class="body">
                 <h1><a href="https://sebacastroh.github.io/">sebacastroh </a></h1>
                 <nav><ul>
+                    <li><a href="https://sebacastroh.github.io/category/algoritmos.html">Algoritmos</a></li>
                     <li><a href="https://sebacastroh.github.io/category/programacion.html">Programacion</a></li>
                     <li><a href="https://sebacastroh.github.io/category/review.html">Review</a></li>
                 </ul>
@@ -22,13 +23,17 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://sebacastroh.github.io/diferencias_finitas.html">Diferencias_Finitas</a></h1>
+                    <h1 class="entry-title"><a href="https://sebacastroh.github.io/ramer-douglas-peucker.html">Ramer-Douglas-Peucker</a></h1>
 <footer class="post-info">
-        <span>dom. 15 enero 2017</span>
+        <span>jue 19 enero 2017</span>
 
-</footer><!-- /.post-info --><p>Muchas veces nos hemos visto enfrentado a EDO, que pasa si aparece una EDP?
-</p>
-<div class="math">$$-\frac{\partial^2}{\partial x^2} u(x) + c(x) u(x) = f(x)\, , \text{si } 0 &lt; x &lt; 1$$</div>
+</footer><!-- /.post-info --><h2>¡Demasiados puntos!</h2>
+<p>Hace un tiempo tuve que leer desde Python unos archivos hechos en <a href="https://es.wikipedia.org/wiki/DWG">AutoCad</a>. Básicamente tuve que leer la geometría de distintos polígonos para luego continuar mi análisis. Sin embargo, no sospechaba la cantidad de puntos que podían estar contenidos en cada uno de los polígonos. Claramente para un amante del detalle, como yo, era genial tener una información tan precisa. Lamentablemente, el número de puntos era tan grande que mis rutinas se demoraban muchísimo más de lo que podía esperar.</p>
+<p>Si uno observaba la geometría de los polígonos, fácilmente se podía dar cuenta que muchos puntos podrían ser simplificados a través de una recta. Obviamente sería una aproximacion, pero el resultado final no afectaría a mi modelización completa.</p>
+<h2>Ideas al aire</h2>
+<p>La primera idea que tuve para solucionar este problema fue determinar los ángulos entre cada segmento del polígono e ir eliminando los puntos que estuvieran asociados a un ángulo menor a un umbral previamente definido. Para ejemplificarlo, consideremos que los puntos están ordenados en un arreglo <a href="http://www.numpy.org/">NumPy</a> de tamaño <span class="math">\((n,2)\)</span>, con <span class="math">\(n\)</span> el número de puntos del polígono. Si es horario o anti-horario no nos afecta.</p>
+<h2>Algo más serio</h2>
+<p>Considerando los problemas que tenía</p>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
@@ -92,13 +97,37 @@
 
             <li><article class="hentry">
                 <header>
+                    <h1><a href="https://sebacastroh.github.io/diferencias_finitas.html" rel="bookmark"
+                           title="Permalink to Diferencias_Finitas">Diferencias_Finitas</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>dom 15 enero 2017</span>
+
+</footer><!-- /.post-info -->                <p>Muchas veces nos hemos visto enfrentado a EDO, que pasa si aparece una EDP?
+</p>
+<div class="math">$$-\frac{\partial^2}{\partial x^2} u(x) + c(x) u(x) = f(x)\, , \text{si } 0 &lt; x &lt; 1$$</div>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768 …</script>
+                <a class="readmore" href="https://sebacastroh.github.io/diferencias_finitas.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
                     <h1><a href="https://sebacastroh.github.io/cython.html" rel="bookmark"
                            title="Permalink to Cython">Cython</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <span>sáb. 14 enero 2017</span>
+        <span>sáb 14 enero 2017</span>
 
 </footer><!-- /.post-info -->                <p>Una de las ventajas de Python es su sencillez al momento de escribir un código. Sin embargo, no todo es tan maravilloso, hay un costo que pagar. Tal vez no nos damos cuenta porque la mayoría de las veces no requerimos hacer cálculos muy pesados, pero las veces que los …</p>
                 <a class="readmore" href="https://sebacastroh.github.io/cython.html">read more</a>

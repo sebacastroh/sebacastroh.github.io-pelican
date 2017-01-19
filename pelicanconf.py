@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from getpass import getuser
 
 AUTHOR = u'Sebastian Castro'
 SITENAME = u'sebacastroh'
@@ -10,14 +11,13 @@ PATH = 'content'
 
 TIMEZONE = 'America/Santiago'
 
-DEFAULT_LANG = u'Spanish'
+DEFAULT_LANG = 'Spanish'
 
-THEME = u'C:\\Users\\sebacastroh\\Anaconda2\\Lib\\site-packages\\pelican\\themes\\blueidea'
+username = getuser()
+THEME = u'C:\\Users\\' + username + '\\Anaconda2\\Lib\\site-packages\\pelican\\themes\\blueidea'
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['render_math']
-
-#MATH_JAX = {'tex_extensions': ['color.js','mhchem.js']}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
